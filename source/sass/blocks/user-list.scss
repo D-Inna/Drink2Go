@@ -1,0 +1,93 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 44px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0;
+    padding-left: 163px;
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+
+.user-list a {
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 40px 32px 44px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $range-color;
+    fill: $range-color;
+  }
+
+  &:active {
+    background-color: #f0ebff;
+    color: #593cac;
+    fill: #593cac;
+  }
+}
+
+.user-list__login {
+  position: relative;
+  display: block;
+  padding: 30px 22px;
+  width: 60px;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  fill: $text-color;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    left: 21px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: $button-color;
+  }
+
+  &:active {
+    background-color: #f0ebff;
+    fill: $button-color;
+  }
+}
+
+.user-list__text {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}

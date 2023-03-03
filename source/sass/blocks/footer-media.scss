@@ -1,0 +1,55 @@
+.footer-media {
+  padding: 20px;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 1px;
+      bottom: 1px;
+      left: 0;
+      background-color: #f0ebff;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+    padding-left: 15px;
+  }
+}
+
+.footer-media__title {
+  font-weight: 700;
+  color: $button-color;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.footer-media__list {
+  margin: 0;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.footer-media__item {
+  padding: 8px 0;
+}
+
+.footer-media__link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color;
+}

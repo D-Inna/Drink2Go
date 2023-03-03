@@ -1,0 +1,53 @@
+.catalog-products {
+  padding: 50px 20px 0;
+  background-color: $catalog-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 20px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+
+.catalog-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    column-gap: 30px;
+  }
+}
+
+.catalog-products__inscription {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 4px;
+  font-style: normal;
+  color: $button-color;
+  text-align: center;
+}
+
+.catalog-products__title {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}

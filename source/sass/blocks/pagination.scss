@@ -1,0 +1,92 @@
+.pagination {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+    grid-column: 1/3;
+  }
+}
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}
+
+.pagination__item {
+  margin-right: 20px;
+  padding: 8px;
+  background-color: #ffffff;
+  min-width: 40px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 14px 0 0;
+    padding: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 16px 0 0;
+    padding: 7px 4px;
+  }
+}
+
+.pagination__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.pagination__item--current {
+  background-color: #f8f8f8;
+}
+
+.pagination__link {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $button-color;
+}
+
+.pagination__link--current {
+  color: $text-color;
+}
+
+.pagination__icon {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__icon--prev {
+  rotate: 180deg;
+}
+
+.pagination__info {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  font-weight: 400;
+  padding: 8px 20px;
+}

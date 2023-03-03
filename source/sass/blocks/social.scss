@@ -1,0 +1,89 @@
+.social {
+  padding: 42px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 20px;
+    width: 320px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 1px;
+      bottom: 1px;
+      left: 0;
+      background-color: #f0ebff;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    padding: 40px 0 20px 40px;
+    display: block;
+  }
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    justify-content: start;
+  }
+}
+
+.social__item {
+  width: 40px;
+  margin-right: 20px;
+  align-self: center;
+  align-items: center;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__network {
+  fill: $radio-color;
+  margin: 10px;
+}
+
+.social__link:hover .social__network {
+  fill: $button-color;
+}
+
+.social__network:hover {
+  fill: $button-color;
+}
+
+.social__item a {
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #f0ebff;
+    fill: $button-color;
+  }
+
+  &:active {
+    background-color: #e4def8;
+    fill: $button-color;
+  }
+}

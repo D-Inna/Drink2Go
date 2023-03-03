@@ -1,0 +1,129 @@
+.advantages {
+  padding: 50px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 30px 120px;
+  }
+}
+
+.advantages__inscription {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: $button-color;
+  text-align: center;
+  padding-right: 22px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    font-size: 13px;
+  }
+}
+
+.advantages__title {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-left: 20px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 101px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-left: 72px;
+    width: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 10px 0 10px;
+  }
+}
+
+.advantages__item-icon {
+  position: absolute;
+  top: 35px;
+  left: 116px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 148px;
+  }
+}
+
+.advantages__heading {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

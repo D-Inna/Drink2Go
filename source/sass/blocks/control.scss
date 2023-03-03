@@ -1,0 +1,78 @@
+.control {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.control__field {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.control__mark {
+  font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid $radio-color;
+    z-index: 1;
+  }
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 3px;
+  left: -30px;
+  background-color: $button-color;
+}
+
+.control__input[type="radio"]:checked + .control__mark::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 0;
+  left: -33px;
+  border: 2px solid $button-color;
+  z-index: 2;
+}
+
+.control__item {
+  padding: 22px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 0;
+  }
+}
+
+.control__field:hover .control__mark::after {
+  border-color: #9070ec;
+  background-color: #f0ebff;
+}
+
+.control__input:disabled + .control__mark {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
+.control__input:focus + .control__mark::after {
+  outline: 1px solid #9070ec;
+  background-color: transparent;
+}

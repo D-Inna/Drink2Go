@@ -1,0 +1,1 @@
+const swiper=new Swiper(".image-slider",{direction:"horizontal",loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0},autoHeight:!0});
